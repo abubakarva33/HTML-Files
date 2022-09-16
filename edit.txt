@@ -1,0 +1,3 @@
+hover effect 2 types
+hover effect in row
+pointer
