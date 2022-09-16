@@ -51,13 +51,17 @@ ul {
     color: #C8C8C8;
 }
 .navbar ul{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 2fr 2fr 1.5fr 1.5fr 8fr;
-    padding: 4px 40px;
-    gap: 5px;
+    display: flex;
+    padding: 5px 30px;
 }
-.navbar ul li{
-
+.navbar ul a{
+    color: #D1E1EC;
+    padding: 7px 20px;
+    border-left: 1px solid gainsboro;
+    
+}
+#one a{
+    border-left: none;
 }
 /* this is profile summary section */
 .profile{
@@ -69,27 +73,29 @@ ul {
     padding: 20px 40px;
 }
 .profile-left{
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr ;
     gap: 40px;
 }
-.profile-right{
-    padding-right: 10px;
+.profile-right a{
+     padding: 10px 20px;
+    background-color: darkgray;
 }
 /* this is annother navbar section */
 .navbar-next{
     font-size: 20px;
     background-color:#19699f;
-    color: #C8C8C8;
+
 
 }
 .navbar-next ul{
-     display: grid;
-        grid-template-columns: 1.8fr 1.5fr 2fr 2fr 1.5fr 1.5fr 8fr;
-        padding: 4px 40px;
-        gap: 5px;
-        color: brown;
-
+     display: flex;
+     padding: 5px 30px;
+}
+.navbar-next ul a{
+    padding: 5px 12px;
+    border-left: 1px solid gainsboro;
+    color: #D1E1EC;
 }
 .locked-jobs{
     padding: 10px 20px;
@@ -102,16 +108,33 @@ ul {
     justify-content: space-between;
     padding: 20px;
 }
+.right span{
+    padding: 3px 10px;
+    border: 1px solid black;
+    text-align: left;
+}
 /* short section */
 .short{
     display: flex;
-    grid-template-columns: 3fr 1fr ;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 10px 20px;
+    margin: auto;
 }
-.short-center ul{
+.short-center ul {
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    justify-content:center;
-    padding: 10px 40px;
+    /* justify-content:center; */
+    /* align-items: center; */
+    margin: auto;
+
+}
+.category{
+    display: flex;
+}
+.category ul {
+    display: flex;
+    padding: 10px;
+    
+}
+.category ul a{
+    padding: 10px;
 }
